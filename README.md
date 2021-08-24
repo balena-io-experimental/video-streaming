@@ -8,7 +8,7 @@ version: '2'
 
 services:
   video-streaming:
-    build: ./streaming
+    build: .
     network_mode: host
     labels:
       io.balena.features.supervisor-api: '1'
