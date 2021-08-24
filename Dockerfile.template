@@ -1,4 +1,4 @@
-FROM mpromonet/webrtc-streamer:latest
+FROM mpromonet/webrtc-streamer:v0.6.4-arm32v7
 
 WORKDIR /app
 
