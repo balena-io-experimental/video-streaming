@@ -1,0 +1,9 @@
+FROM mpromonet/webrtc-streamer:v0.6.4-armv6
+
+WORKDIR /app
+
+RUN apt update && apt install -y jq curl
+
+COPY . .
+
+ENTRYPOINT ["/bin/bash", "/app/entry.sh"]
