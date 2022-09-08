@@ -1,6 +1,8 @@
 # video-streaming
 The Streaming Block takes an RTSP stream as an input and produces a WebRTC stream as an output. The input stream is selected automatically but can be overriden. If a container named "video-processing" is running on the device, it will use that block's RTSP output stream as an input. If no processing block is found, it will look for the [capture block](https://github.com/balenablocks/video-capture) and use that as the input. If neither are found, or you want to override this behavior, you can specify an RTSP input stream with the service variable `WEBRTC_RTSP_INPUT`. By default, the output WebRTC stream will be on port 80, but you can change that by specifying the service variable `WEBRTC_PORT`.
 
+NOTE: This block is still under active development and subject to updates and changes. Feel free to add an issue or open a PR!
+
 ## Usage
 To use this image, create a container in your `docker-compose.yml` file as shown below:
 ```
